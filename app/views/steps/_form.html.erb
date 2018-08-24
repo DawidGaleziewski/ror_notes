@@ -1,0 +1,76 @@
+
+<%= form_for(@step, :html => {class: 'form-horizontal', role: 'form'}) do |step| %>
+
+<div class= 'form-group'>
+  <div class = 'row'> 
+    <div class= 'col-xs-12'>
+      
+      <div class = 'control-label col-sm-2'>
+        <%= step.label :position %>
+      </div>
+      
+      <div class= 'col-sm-1'>
+        <%= step.text_field :position, class: 'form-control' %>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+<div class= 'form-group'>
+  <div class = 'row'> 
+    <div class= 'col-xs-12'>
+      
+      <div class = 'control-label col-sm-2'>
+        <%= step.label :title %>
+      </div>
+      
+      <div class= 'col-sm-3'>
+        <%= step.text_field :title, class: 'form-control' %>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+<div class= 'form-group'>
+  <div class = 'row'> 
+    <div class= 'col-xs-12'>
+      
+      <div class = 'control-label col-sm-2'>
+        <%= step.label :description %>
+      </div>
+      
+      <div class= 'col-sm-6'>
+        <%= step.text_area :description, class: 'form-control', rows: 10 %>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+<div class= 'form-group'>
+  <div class = 'row'> 
+    <div class= 'col-xs-12'>
+      
+      <div class = 'control-label col-sm-2'>
+        <%= step.label :category %>
+      </div>
+      
+      <div class= 'col-sm-3'>
+        <%= step.text_field :category, class: 'form-control' %>
+      </div>
+      
+    </div>
+  </div>
+</div>
+  
+
+<%= step.submit class: 'btn btn-primary btn-lg col-sm-offset-2'%>
+
+  
+
+<% end %>
